@@ -23,7 +23,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void amountLess1000() {
+    public void amountLess1000() {
 
         int amount = 150;
         int expected = 850;
