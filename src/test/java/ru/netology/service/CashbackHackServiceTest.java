@@ -18,8 +18,18 @@ public class CashbackHackServiceTest {
         int amount = 2500;
         int expected = 500;
 
-        assertEquals(getActual(amount), expected);
+        assertEquals(expected, getActual(amount));
 
     }
+
+    @Test
+    public void amountLess1000() {
+
+        int amount = 150;
+        int expected = 850;
+
+        assertEquals(expected, getActual(amount));
+    }
+
 
 }
